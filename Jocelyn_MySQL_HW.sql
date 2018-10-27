@@ -59,7 +59,7 @@ WHERE first_name = 'GROUCHO' AND last_name = 'WILLIAMS';
 
 
 
-#4D change to either HARPO or MUCHO
+#4D change to either HARPO or MUCHO with unique identifier
 
 SELECT * FROM actor; 
 
@@ -132,7 +132,7 @@ customer.customer_id = payment.customer_id
 GROUP BY customer.last_name, customer.first_name
 ORDER BY customer.last_name ASC;
 
-#7A Queen and Kris Kristofferson  
+#7A Q'ueen' and K'ris Kristofferson'  and in English
 
 	SELECT title
 	FROM film
@@ -144,12 +144,6 @@ ORDER BY customer.last_name ASC;
 		SELECT language_id
 		FROM language
 		WHERE name = 'English'));
-
-
-
-
-SELECT first_name, last_name  FROM actor 
-WHERE last_name LIKE '%gen%'; 
 
 
 #7B subquery all actors in Alone Trip 
